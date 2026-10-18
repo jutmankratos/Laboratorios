@@ -23,5 +23,5 @@ SELECT
     pgp_sym_decrypt(rfc_cifrado, 'CLAVE-DE-PRUEBA') AS rfc_descifrado
 FROM clientes_protegidos;
 
--- clavAe incorrecta
+-- clave incorrecta
 SELECT pgp_sym_decrypt(rfc_cifrado, 'CLAVE-INCORRECTA') FROM clientes_protegidos;
